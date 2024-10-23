@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block pageStyle %}
+  <link rel="stylesheet" href="{% static 'home/css/style.css' %}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block pageContent %}
+<nav class="navbar">
+  <div class="navbar-brand">
+    <h1>Pratham's Portfolio</h1>
+  </div>
+  
+  <div class="navbar-menu">
+    <button class="hamburger" id="menuBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script src="{% static 'home/js/script.js' %}"></script>
+{% endblock %}
